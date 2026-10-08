@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Daily Kids | Magic Learning for Little Ones</title>
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Luckiest+Guy&display=swap"
+  rel="stylesheet">
+      <style>
+          :root {
+              --primary-yellow: #FFD700;
+              --secondary-blue: #87CEEB;
+              --accent-pink: #FF69B4;
+              --soft-white: #F9F9F9;
+              --text-dark: #444;
+          }
+
+          body {
+              margin: 0;
+              font-family: 'Fredoka', sans-serif;
+              background-color: var(--soft-white);
+              color: var(--text-dark);
+              text-align: center;
+              overflow-x: hidden;
+          }
+
+          /* Header Section */
+          header {
+              background: var(--primary-yellow);
+              padding: 60px 20px;
+              border-bottom: 10px solid var(--secondary-blue);
+              border-radius: 0 0 50px 50px;
+          }
+
+          h1 {
+              font-family: 'Luckiest Guy', cursive;
+              font-size: 4rem;
+              color: #ff4500;
+              text-shadow: 3px 3px 0px white;
+              margin: 0;
+              letter-spacing: 2px;
+          }
+
+          .tagline {
+              font-size: 1.5rem;
+              color: #555;
+              margin-top: 10px;
+          }
+
+          /* Main Call to Action */
+          .cta-container {
+              margin: 40px 20px;
+          }
+
+          .btn-youtube {
+              background-color: #FF0000;
+              color: white;
+              padding: 20px 40px;
+              font-size: 1.8rem;
+              font-weight: bold;
+              text-decoration: none;
+              border-radius: 50px;
+              box-shadow: 0 10px 0px #b30000;
+              transition: all 0.2s ease;
+              display: inline-block;
+              font-family: 'Luckiest Guy', cursive;
+          }
+
+          .btn-youtube:hover {
+              transform: translateY(5px);
+              box-shadow: 0 5px 0px #b30000;
+          }
+
+          /* Features Section */
+          .features {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              gap: 20px;
+              padding: 50px 20px;
+              max-width: 1000px;
+              margin: 0 auto;
+          }
+
+          .card {
+              background: white;
+              border: 5px solid var(--secondary-blue);
+              border-radius: 30px;
+              padding: 20px;
+              width: 280px;
+              transition: transform 0.3s ease;
+          }
+
+          .card:hover {
+              transform: scale(1.05) rotate(2deg);
+          }
+
+          .card h3 {
+              color: var(--accent-pink);
+              font-size: 1.8rem;
+              margin-bottom: 10px;
+          }
+
+          .card p {
+              font-size: 1.1rem;
+              line-height: 1.5;
+          }
+
+          /* Footer */
+          footer {
+              background: var(--secondary-blue);
+              padding: 30px;
+              margin-top: 50px;
+              color: white;
+              font-weight: bold;
+          }
+
+          /* Animation for balls */
+          .ball {
+              position: absolute;
+              border-radius: 50%;
+              z-index: -1;
+              opacity: 0.5;
+              animation: float 6s infinite ease-in-out;
+          }
+
+          @keyframes float {
+              0% { transform: translateY(0px) rotate(0deg); }
+              50% { transform: translateY(-20px) rotate(180deg); }
+              100% { transform: translateY(0px) rotate(360deg); }
+          }
+      </style>
+  </head>
+  <body>
+
+      <!-- Decorative Floating Balls -->
+      <div class="ball" style="width: 100px; height: 100px; background: var(--accent-pink); top: 10%; left: 10%;"></div>
+      <div class="ball" style="width: 60px; height: 60px; background: var(--primary-yellow); top: 20%; right: 15%;
+  animation-delay: 1s;"></div>
+      <div class="ball" style="width: 80px; height: 80px; background: var(--secondary-blue); bottom: 20%; left: 20%;
+  animation-delay: 2s;"></div>
+
+      <header>
+          <h1>DAILY KIDS</h1>
+          <p class="tagline">🌈 Magic Learning & Fun for Little Ones! 🚀</p>
+      </header>
+
+      <div class="cta-container">
+          <a href="https://youtube.com/@your-channel-handle" class="btn-youtube">📺 VISIT OUR CHANNEL!</a>
+      </div>
+
+      <section class="features">
+          <div class="card">
+              <h3>🧩 Puzzles</h3>
+              <p>Test your "Super-Eyes" with our hidden object games and secret ball hunts!</p>
+          </div>
+          <div class="card">
+              <h3>🌈 Colors</h3>
+              <p>Discover the magic of colors through satisfying ASMR animations and art.</p>
+          </div>
+          <div class="card">
+              <h3>🌟 Safety</h3>
+              <p>A warm, safe, and friendly environment for children aged 1 to 10.</p>
+          </div>
+      </section>
+
+      <footer>
+          <p>© 2026 Daily Kids | Made with Love for Little Explorers 🎈</p>
+      </footer>
+
+  </body>
+  </html>
